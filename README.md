@@ -11,6 +11,7 @@
 IT HAVE EVERYTHING TO BUILD AN AMAZING WORDPRESS WEBSITE 
 
 ## Description ##
+ [![Build Status](https://scrutinizer-ci.com/g/Imonthemes/Safreen/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Imonthemes/Safreen/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Imonthemes/Safreen/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Imonthemes/Safreen/?branch=master)
 
 Safreen super flat design and responsive landing page and multipurpose theme. you will be amazed by the real time customizer,lots of smart options that will help you build your website with ease.It is built with modern web technologies: HTML5, CSS3 and jQuery. It is fully responsive and thus, looks stunning on all screen types: desktop, notebook, tablet and smartphones.Its translation ready, ready for WooCommerce, Mailchimp, Contact Form 7.
 
