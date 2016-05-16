@@ -28,7 +28,11 @@ add_action( 'after_setup_theme', 'safreen_content_width', 0 );
 if ( ! function_exists( 'safreen_setup' ) ) :
 //**************safreen SETUP******************//
 function safreen_setup() {
-
+//Custom Background
+add_theme_support( 'custom-background', array(
+	'default-color' => 'FFF',
+	
+) );
 
 /*
 		 * Let WordPress manage the document title.
@@ -116,7 +120,6 @@ endif;
 
 function safreen_catch_that_image() {
 global $post, $posts;
-$safreenfirst_img = esc_url('');
 ob_start();
 ob_end_clean();
 if(preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches)){
@@ -261,12 +264,11 @@ wp_enqueue_script('sidr',get_template_directory_uri().'/js/jquery.sidr.min.js',a
 wp_enqueue_script('matchHeight',get_template_directory_uri().'/js/jquery.matchHeight.js',array('jquery'), true);
 
 $safreen_Static_Sliderpara = get_theme_mod('safreen_Static_Sliderpara',1);
-if( isset($safreen_Static_Sliderpara) && $safreen_Static_Sliderpara == 1 ):
+if( isset($safreen_Static_Sliderpara) && $safreen_Static_Sliderpara == 1 ){
 wp_enqueue_script('safreen_StaticSliderh',get_template_directory_uri().'/js/halfparallax.js',array('jquery'), true);
-endif;
-if( isset($safreen_Static_Sliderpara) && $safreen_Static_Sliderpara == 0 ):
+  } else {
 wp_enqueue_script('safreen_StaticSlider',get_template_directory_uri().'/js/headerParallax.js',array('jquery'), true);
-endif;
+  }
 if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 
 }
